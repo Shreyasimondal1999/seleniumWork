@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="myTest(failed)">
+    <parameter name="URL" value="https://www.flipkart.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Day38InvocationcountParallelTesting.ParallelTesttingORCrossBrowserTesting">
+        <methods>
+          <include name="TitleTesting"/>
+          <include name="LogoTesting"/>
+          <include name="driverSetUp"/>
+          <include name="QuitBrowser"/>
+        </methods>
+      </class> <!-- Day38InvocationcountParallelTesting.ParallelTesttingORCrossBrowserTesting -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

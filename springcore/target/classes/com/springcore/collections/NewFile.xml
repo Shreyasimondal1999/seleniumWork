@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <!--  this is our beans -->   
+   
+<bean class = "com.springcore.collections.result" name = "resRef">
+<property name="y" value = "10"/>
+</bean> 
+<bean class="com.springcore.collections.Student" name="Student1">
+<property name ="studentId"  >
+<value>1</value>
+</property>
+<property name = "studentName" value = "Shreyasi"></property>
+<property name = "phoneNo">
+<list>
+<value>7002128921</value>
+<value>7002143451</value>
+<null/>
+</list>
+</property>
+<property name = "address">
+<set>
+<value>Chennai</value>
+<value>Kolkata</value>
+<null/>
+</set>
+</property>
+<property name = "map">
+<map>
+<entry key = "Chennai" value = "7002128921"/>
+<entry key = "Kolkata" value = "7002143451"/>
+</map>
+</property>
+<property name = "res">
+<ref bean = "resRef"/>
+</property>
+
+
+
+</bean>
+
+</beans>

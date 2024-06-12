@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- we can keep name of the suite anything -->
+<suite name ="MySuite">
+<!-- specify the group we want to execute -->
+<groups>
+<run>
+<!-- this will run any test that comes under sanity testing, even if that test comes under some other testing -->
+ <include name = "sanity"></include>
+ <!-- this will exclude the test which comes under regression testing -->
+ <exclude name = "regression"></exclude>
+</run>
+</groups>
+<!-- we can keep name of the test anything -->
+<test name = "MyTest">
+<classes>
+<class name ="Day37Grouping.Grouping"/>
+</classes>
+</test>
+</suite>

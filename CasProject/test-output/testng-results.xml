@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-03T01:06:22 PDT" name="Suite" finished-at="2024-06-03T01:07:51 PDT" duration-ms="89090">
+    <groups>
+    </groups>
+    <test started-at="2024-06-03T01:06:22 PDT" name="Test" finished-at="2024-06-03T01:07:51 PDT" duration-ms="89090">
+      <class name="OutReach.OutreachMain">
+        <test-method is-config="true" signature="setup()[pri:0, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:06:22 PDT" name="setup" finished-at="2024-06-03T01:06:36 PDT" duration-ms="13918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="onCognizant()[pri:2, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:06:36 PDT" name="onCognizant" finished-at="2024-06-03T01:07:00 PDT" duration-ms="23664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCognizant -->
+        <test-method signature="menu()[pri:3, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:00 PDT" name="menu" finished-at="2024-06-03T01:07:01 PDT" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu -->
+        <test-method signature="submenu()[pri:4, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:01 PDT" name="submenu" finished-at="2024-06-03T01:07:07 PDT" duration-ms="5649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submenu -->
+        <test-method signature="interstCardList()[pri:5, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:07 PDT" name="interstCardList" finished-at="2024-06-03T01:07:07 PDT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- interstCardList -->
+        <test-method signature="serachFilterButton()[pri:6, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:07 PDT" name="serachFilterButton" finished-at="2024-06-03T01:07:12 PDT" duration-ms="5239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serachFilterButton -->
+        <test-method signature="fromDate()[pri:7, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:12 PDT" name="fromDate" finished-at="2024-06-03T01:07:14 PDT" duration-ms="1986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromDate -->
+        <test-method signature="toDate()[pri:8, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:14 PDT" name="toDate" finished-at="2024-06-03T01:07:26 PDT" duration-ms="11171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toDate -->
+        <test-method signature="filterSearchButton()[pri:9, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:26 PDT" name="filterSearchButton" finished-at="2024-06-03T01:07:27 PDT" duration-ms="1652" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-success float-right vieweventsearchbtn" title="..." id="eventsHomeSearchBtn">Search</button> is not clickable at point (544, 413). Other element would receive the click: <th class="dow">...</th>
+  (Session info: MicrosoftEdge=125.0.2535.79)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e6b9c31f93350ce5f9f9840a2e32ab65, clickElement {id=f.BDB87071C29AC24937E42D296D1D226E.d.2C5A5B9CD4F3B274A728D33E52C31158.e.242}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62695}, msedge: {msedgedriverVersion: 125.0.2535.79 (7e3dd970e483..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62695/devtoo..., se:cdpVersion: 125.0.2535.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e6b9c31f93350ce5f9f9840a2e32ab65)] -> id: eventsHomeSearchBtn]
+Session ID: e6b9c31f93350ce5f9f9840a2e32ab65]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-success float-right vieweventsearchbtn" title="..." id="eventsHomeSearchBtn">Search</button> is not clickable at point (544, 413). Other element would receive the click: <th class="dow">...</th>
+  (Session info: MicrosoftEdge=125.0.2535.79)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e6b9c31f93350ce5f9f9840a2e32ab65, clickElement {id=f.BDB87071C29AC24937E42D296D1D226E.d.2C5A5B9CD4F3B274A728D33E52C31158.e.242}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.79, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62695}, msedge: {msedgedriverVersion: 125.0.2535.79 (7e3dd970e483..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62695/devtoo..., se:cdpVersion: 125.0.2535.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e6b9c31f93350ce5f9f9840a2e32ab65)] -> id: eventsHomeSearchBtn]
+Session ID: e6b9c31f93350ce5f9f9840a2e32ab65
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at OutReach.PomOutReach.clickFilterSearchButton(PomOutReach.java:220)
+at OutReach.OutreachMain.filterSearchButton(OutreachMain.java:112)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterSearchButton -->
+        <test-method signature="displaySearchResults()[pri:10, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:27 PDT" name="displaySearchResults" finished-at="2024-06-03T01:07:37 PDT" duration-ms="10059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displaySearchResults -->
+        <test-method signature="vlounteerOption()[pri:11, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:37 PDT" name="vlounteerOption" finished-at="2024-06-03T01:07:39 PDT" duration-ms="2106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vlounteerOption -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:OutReach.OutreachMain@1e800aaa]" started-at="2024-06-03T01:07:39 PDT" name="closeBrowser" finished-at="2024-06-03T01:07:51 PDT" duration-ms="11751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- OutReach.OutreachMain -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

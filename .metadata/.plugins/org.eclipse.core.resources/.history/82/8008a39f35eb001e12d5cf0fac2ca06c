@@ -1,0 +1,49 @@
+package practisebeforeexam;
+import java.lang.*;
+import java.util.*;
+class Student{
+	private String studentId;
+	private String studentName;
+	private int totalMarks;
+	public Student(String stid,String stname,int totalmark){
+	this.studentId = stid;
+	this.studentName = stname;
+	this.totalMarks = totalmark;
+	
+	}
+}
+
+public class studentExceptionHandle {
+//	public static Student makeStudent(String data)throws Exception{
+//		// input A1011:Raja:234
+//		String arr[] = data.split(":");
+//		Student s = null;
+//		try{
+//		int total = Integer.parseInt(arr[2]);
+//		s = new Student(arr[0],arr[1],total);
+//		}
+//		catch(Exception e){
+//		throw new Exception("improper data");
+//		}
+//		return s;
+//		}
+	public static Student makeStudent(String data){
+		// input A1011:Raja:234
+		String arr[] = data.split(":");
+		Student s = null;
+		int total = Integer.parseInt(arr[2]);
+		s = new Student(arr[0],arr[1],total);
+		return s;
+		}
+public static void main(String args[]) {
+	Scanner sc = new Scanner(System.in);
+	String data = sc.nextLine();
+//	try {
+//	Student s = makeStudent(data);
+//	}
+//	catch (Exception e) {
+//		System.out.println(e.getMessage());
+//	}
+}
+
+}

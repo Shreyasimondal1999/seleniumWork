@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <!--  this is our beans -->
+   <!-- calling setter methods only there fore setter injection -->  
+   <!-- here bean name and dependent  class variable name has to be same , 
+   it first see the class variable name then searches for bean name -->  
+ <bean class = "com.springcore.auto.wire.Address" name="ad2">
+ <property name  = "street"  value = "madhusudanpally" />
+ <property name = "Zipcode"  value = "742225" />
+ <property name = "city"  value = "Raghunathganj" />
+ </bean>
+  <bean class = "com.springcore.auto.wire.Address" name="ad">
+ <property name  = "street"  value = "bantala" />
+ <property name = "Zipcode"  value = "700105" />
+ <property name = "city"  value = "Bantala" />
+ </bean>
+    <!-- here bean name and dependent  class variable name has to be same , 
+   it first see the class variable name then searches for bean name -->  
+ <!--  <bean class = "com.springcore.auto.wire.Employee" name="E1" autowire="byName" />-->
+  <!-- here also setter injection occurs and here bean name can be anything 
+ but only single bean of that type should exist -->
+<!-- <bean class = "com.springcore.auto.wire.Employee" name="E1" autowire="byType" /> -->
+   <!-- here in case of constructor also bean name and dependent  class variable name has to be same , 
+   it first see the class variable name then searches for bean name -->  
+<bean class = "com.springcore.auto.wire.Employee" name="E1" autowire="constructor" />
+</beans>

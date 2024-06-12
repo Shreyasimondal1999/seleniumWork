@@ -1,0 +1,27 @@
+package Coursera;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class SearchedCourses {
+ WebDriver driver ;
+ public SearchedCourses(WebDriver driver){
+	 this.driver = driver;
+	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	 PageFactory.initElements(driver,this);
+ }
+ //locator
+ By SearchElement =By.xpath("//a[@data-click-key='search.search.click.search_card']/h3");
+ 
+ By ratings = By.xpath("//div[@class='product-reviews css-pn23ng']/descendant::p[1]");
+ 
+ By LearningDurations = By.xpath("//div[@class='cds-CommonCard-metadata']/descendant::p[1]");
+ 
+ By Languages = By.xpath("//div[@class ='css-q5d1os']//div[@class='cds-checkboxAndRadio-labelText']");
+ 
+ By Levels = By.xpath("")
+
+}

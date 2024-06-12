@@ -1,0 +1,56 @@
+package Coursera;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class SearchedCourses {
+ public WebDriver driver ;
+ public SearchedCourses(WebDriver driver){
+	 this.driver=driver;
+	PageFactory.initElements(driver,this);
+ }
+ //locator
+ By SearchElementNames =By.xpath("//a[@data-click-key='search.search.click.search_card']/h3");
+ 
+ By ratings = By.xpath("//div[@class='product-reviews css-pn23ng']/descendant::p[1]");
+ 
+ By learningDurations = By.xpath("//div[@class='cds-CommonCard-metadata']/descendant::p[1]");
+ 
+ By Languages = By.xpath("//div[@class ='css-q5d1os']//div[@class='cds-checkboxAndRadio-labelText']");
+ 
+ By Levels = By.xpath("//label[text()='Level']/following-sibling::div//div[@class='css-nsxeb5']//div/span/span");
+ 
+ //Actions
+
+ public void ShowDataOfSearchedElements() {
+	 List<WebElement> searchedDatas = driver.findElements(SearchElementNames);
+	 List<WebElement> Ratings= driver.findElements(ratings);
+	 List<WebElement> LearningDurations= driver.findElements(learningDurations);
+	 System.out.println("The searched course is : ");
+	 int count =0;
+     for (WebElement element : searchedDatas) {
+    	 System.out.println("Inside loop : ");
+	  if(count<2) {
+		System.out.println(element.getText());
+		 System.out.println("The Rating for this course is : ");
+		 System.out.println(Ratings.get(count).getText());
+		 System.out.println("The searched course Learning Duration is : ");
+		 System.out.println(LearningDurations.get(count).getText());
+		 count++;
+		
+	}
+	else {
+		break;
+	}
+	 
+   }
+ }
+ 
+ 
+
+}
